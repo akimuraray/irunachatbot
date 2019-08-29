@@ -16,5 +16,6 @@
     "express": "^4.17.1",
     "firebase-admin": "^8.4.0",
     "request": "^2.88.0"
-  }
+  },
+  "devDependencies": {}
 }
