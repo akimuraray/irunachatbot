@@ -15,8 +15,8 @@ const bodyParser = require('body-parser');
     server()
     .use(bodyParser.json())
     .use(bodyParser.urlencoded({ extended: false}))
-    .get('/', (req, res) => res.send(`Irunaonline Chat bot running on PORT: ${ PORT }`))
-    // เพิ่มส่วนของ Webhook เข้าไป
+    .get('/', (req, res) => res.send(`Irunaonline BOT Chat running on PORT: ${ PORT }`))
+    
     .post('/webhook', function (req, res) {
         let replyToken = req.body.events[0].replyToken;
         let msg = req.body.events[0].message.text;
